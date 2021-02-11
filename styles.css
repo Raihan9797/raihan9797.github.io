@@ -1,8 +1,35 @@
-.placeholder {
-    background: green;
-    background-color: blue;
+.nav-wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    border: solid green;
 }
 
-.anotherClass {
-    background-color: yellow;
+.left-side {
+    display: flex;
+}
+.nav-wrapper > .left-side > div {
+    margin-right: 20px;
+    font-size: 0.9em;
+    text-transform: uppercase;
+}
+
+.nav-link-wrapper {
+    height: 22px;
+    transition: border-bottom 0.5s;
+    /*border: solid blue;*/
+}
+
+.nav-link-wrapper a {
+    /*color: pink;*/
+    text-decoration: none;
+    transition: color 0.5s;
+}
+
+.nav-link-wrapper:hover {
+    border-bottom: 1px solid black;
+}
+
+.nav-link-wrapper a:hover {
+    color: green;
 }

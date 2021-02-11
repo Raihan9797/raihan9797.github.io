@@ -8,7 +8,7 @@ Using this link: https://www.youtube.com/watch?v=5bMdjkfvONE&ab_channel=Udemy
     - connecting files
     - set up on github
 
-2. Navbar
+2. Navbar (done)
     - 2 links and a name
 
 3. Portfolio grid
