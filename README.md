@@ -11,7 +11,7 @@ Using this link: https://www.youtube.com/watch?v=5bMdjkfvONE&ab_channel=Udemy
 2. Navbar (done)
     - 2 links and a name
 
-3. Portfolio grid
+3. Portfolio grid (done)
     - images
     - titles
     - descriptions
