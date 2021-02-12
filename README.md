@@ -18,12 +18,12 @@ Using this link: https://www.youtube.com/watch?v=5bMdjkfvONE&ab_channel=Udemy
     - animations
     - javascript
 
-4. About Page
+4. About Page (done)
     - image
     - split column layout
     - content
 
 
-5. Additional
-    - getting fonts
-    - active state for tabs
+5. Additional (done)
+    - getting fonts (done)
+    - active state for tabs (done)

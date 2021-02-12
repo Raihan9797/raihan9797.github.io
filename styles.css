@@ -50,6 +50,15 @@ body {
     color: green;
 }
 
+.active-nav-link {
+    border-bottom: 1px solid black;
+}
+
+.active-nav-link a {
+    /*override default color behavior*/
+    color: black !important;
+}
+
 
 /* Portfolio Styles */
 .portfolio-items-wrapper {
