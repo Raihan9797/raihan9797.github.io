@@ -3,6 +3,7 @@
 
 body {
     margin: 0;
+    font-family: "Lato", sans-serif;
     /*border: solid red;*/
 }
 
@@ -10,7 +11,7 @@ body {
 .container {
     display: grid;
     grid-template-columns: 1fr;
-    /*border: double blue;*/
+    border: double orange;
 }
 
 .nav-wrapper {
@@ -58,7 +59,7 @@ body {
 
 .portfolio-item-wrapper {
     position: relative;
-    border: solid blue;
+    /*border: solid blue;*/
 }
 
 .portfolio-img-background {
@@ -74,7 +75,7 @@ body {
     top: 0;
     display: flex;
     flex-direction: column;
-    border: solid green;
+    /*border: solid green;*/
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -101,4 +102,23 @@ body {
 .img-darken {
     transition: 1s;
     filter: brightness(10%);
+}
+
+
+/* About Page Styles */
+.two-column-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.portfolio-image-wrapper img {
+    width: 100%;
+}
+
+.profile-content-wrapper {
+    padding: 30px;
+}
+
+.profile-content-wrapper h1 {
+    color: lightseagreen;
 }

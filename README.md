@@ -22,3 +22,8 @@ Using this link: https://www.youtube.com/watch?v=5bMdjkfvONE&ab_channel=Udemy
     - image
     - split column layout
     - content
+
+
+5. Additional
+    - getting fonts
+    - active state for tabs
