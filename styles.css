@@ -1,17 +1,17 @@
 /* Master Styles */
-
-
 body {
     margin: 0;
     font-family: "Lato", sans-serif;
     /*border: solid red;*/
 }
 
+
+
 /* Nav Styles */
 .container {
     display: grid;
     grid-template-columns: 1fr;
-    border: double orange;
+    /*border: double blueviolet;*/
 }
 
 .nav-wrapper {
@@ -58,6 +58,7 @@ body {
     /*override default color behavior*/
     color: black !important;
 }
+
 
 
 /* Portfolio Styles */
@@ -114,18 +115,31 @@ body {
 }
 
 
+
 /* About Page Styles */
 .two-column-wrapper {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 4fr 1fr;
+    /*border: solid green;*/
 }
 
-.portfolio-image-wrapper img {
+.profile-image-wrapper {
+    width: 240px;
+    height: 240px;
+    overflow: hidden;
+    border-radius: 100%;
+    /*border: solid black;*/
+    justify-self: center;
+    align-self: center;
+}
+
+.profile-image-wrapper img {
     width: 100%;
 }
 
 .profile-content-wrapper {
     padding: 30px;
+    /*border: solid coral;*/
 }
 
 .profile-content-wrapper h1 {
