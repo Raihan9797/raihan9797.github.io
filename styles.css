@@ -1,28 +1,32 @@
 /* Master Styles */
 body {
     margin: 0;
+    padding: 0;
     font-family: "Lato", sans-serif;
     /*border: solid red;*/
 }
 
-
-
-/* Nav Styles */
 .container {
     display: grid;
     grid-template-columns: 1fr;
     /*border: double blueviolet;*/
 }
 
+
+/* Nav Styles */
 .nav-wrapper {
     display: flex;
     justify-content: space-between;
     padding: 40px;
-    /*border: solid green;*/
+    border: solid green;
 }
 
 .left-side {
     display: flex;
+}
+.right-side {
+    display: flex;
+    align-items: center;
 }
 .nav-wrapper > .left-side > div {
     margin-right: 20px;
@@ -31,7 +35,7 @@ body {
 }
 
 .nav-link-wrapper {
-    height: 22px;
+    height: 20px;
     transition: border-bottom 0.5s;
     /*border: solid blue;*/
 }
