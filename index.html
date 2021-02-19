@@ -1,132 +1,116 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content='width=device-width, initial-scale=1.0'>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 
-    <title>About Me</title>
+    <title>Raihan's Website</title>
 </head>
-
-
-
 <body>
-    <!-- WHOLE BODY -->
+    <nav class="navbar">
+        <ul class="left-side">
+            <li class="nav-link-wrapper"><a href="#about">ABOUT ME</a></li>
+            <li class="nav-link-wrapper"><a href="#experience">EXPERIENCE</a></li>
+            <li class="nav-link-wrapper"><a href="#skills">SKILLS</a></li>
+            <li class="nav-link-wrapper"><a href="#projects">PROJECTS</a></li>
+            <li class="nav-link-wrapper"><a href="old_index.html">testing</a></li>
+        </ul>
+
+        <div class="right-side">
+            <div class="brand">
+                RAIHAN TARMIDI
+            </div>
+
+        </div>
+    </nav>
     <div class="container">
 
-        <!-- NAV BAR -->
-        <div class="nav-wrapper">
-            <div class="left-side">
-                <div class="nav-link-wrapper active-nav-link">
-                    <a href="index.html">Home</a>
+
+
+        <section id="about">
+            <h1 class="section-header">
+                About Me
+            </h1>
+            <div class="two-column-wrapper">
+
+                <div class="profile-content-wrapper">
+                    <h1>Hello World!</h1>
+                    <p>
+                        I'm Raihan, a year 3 Business Analytics student in the National University of Singapore (NUS).
+                    </p>
                 </div>
 
-                <div class="nav-link-wrapper">
-                    <a href="about.html">About Me</a>
-                </div>
-
-                <div class="nav-link-wrapper">
-                    <a href="test.html">TESTING</a>
-                </div>
-            </div>
-
-            <div class="left-side">
-                <div class="brand">
-                    RAIHAN TARMIDI
-                </div>
-
-            </div>
-        </div>
-
-        <!-- ABOUT ME -->
-
-        <!-- MY SKILLS -->
-
-        <!-- CONTACT -->
-
-        <!-- WORK AND EDUCATION -->
-
-        <!-- MY PROJECTS -->
-        <div class="content-wrapper">
-            <div class="portfolio-items-wrapper">
-
-                <div class="portfolio-item-wrapper">
-                    <div class='portfolio-img-background' style='background-image:url(images/portfolio1.jpg)'>
-                    </div>
-                    <div class="img-text-wrapper">
-                        <div class="logo-wrapper">
-                            <img src="images/logos/quip.png" alt="">
-                        </div>
-
-                        <div class="subtitle">
-                            This is subtitle text
-                        </div>
-                    </div>
+                <div class="profile-image-wrapper">
+                    <img src="images/profile.jpg" alt="Profile Image">
 
                 </div>
-
-                <!-- image 2 -->
-                <div class="portfolio-item-wrapper">
-                    <div class='portfolio-img-background' style='background-image:url(images/portfolio2.jpg)'>
-                    </div>
-                    <div class="img-text-wrapper">
-                        <div class="logo-wrapper">
-                            <img src="images/logos/quip.png" alt="">
-                        </div>
-
-                        <div class="subtitle">
-                            This is subtitle text
-                        </div>
-                    </div>
-
-                </div>
-
-                <!-- image 3 -->
-                <div class="portfolio-item-wrapper">
-                    <div class='portfolio-img-background' style='background-image:url(images/portfolio3.jpg)'>
-                    </div>
-                    <div class="img-text-wrapper">
-                        <div class="logo-wrapper">
-                            <img src="images/logos/quip.png" alt="">
-                        </div>
-
-                        <div class="subtitle">
-                            This is subtitle text
-                        </div>
-                    </div>
-
-                </div>
-
-
-
 
             </div>
-        </div>
+        </section>
+
+        <section id="experience">
+            <h1 class="section-header">MY EXPERIENCE</h1>
+            <h2>School</h2>
+            <h4>Relevant Course Work</h4>
+            <p>Machine Learning, Data Management And Visualization, Data Structures and Algorithms, Probability and Statistics</p>
+            <h2>Work</h2>
+            <h4>Sembcorp</h4>
+            <p>I'm currently Interning at Sembcorp under their Data Science Department</p>
+            <h2>CCAs</h2>
+            <h4>NUS Kayaking</h4>
+            <p>Marketing Director, facilitating classes for students, and going on expeditions!</p>
+        </section>
+        <section id="skills">
+            <h1 class="section-header">MY SKILLS</h1>
+            <h4>Languages</h4>
+            <ul>
+                <li>Python</li>
+                <li>Java</li>
+                <li>R</li>
+                <li>javascript</li>
+            </ul>
+            <h4>Framework</h4>
+            <ul>
+                <li>Python</li>
+                <li>Java</li>
+                <li>R</li>
+                <li>javascript</li>
+            </ul>
+        </section>
+        <section id="projects">
+            <h1 class="section-header">MY PROJECTS</h1>
+
+            <ul class="projects-list">
+
+
+                <li class="project-wrapper">
+                    <div class="project-image-wrapper" onclick=" window.open('https://github.com/Raihan9797/Texts-from-a-Stoic','_blank')"">
+                        <h4 class="project-header">Senecabot</h4>
+                        <img src="images/senecabot.png" alt="Seneca">
+                        <p class="project-details">Created a Telegram Bot</p>
+                    </div>
+                </li>
+
+
+                <li class="project-wrapper">
+                    <div class="project-image-wrapper">
+                        <h4 class="project-header">My Personal Website</h4>
+                        <img src="images/test.jpg" alt="testing">
+                        <p class="project-details">I made this site using HTML CSS Javascript!</p>
+                    </div>
+
+
+                </li>
+
+            </ul>
+
+
+        </section>
     </div>
-
+    
 </body>
-
-<script>
-    const portfolioItems = document.querySelectorAll('.portfolio-item-wrapper')
-
-    portfolioItems.forEach(portfolioItem => {
-        portfolioItem.addEventListener('mouseover', () => {
-            //console.log(portfolioItem)
-            //console.log(portfolioItem.childNodes[1].classList);
-            portfolioItem.childNodes[1].classList.add('img-darken')
-        })
-    })
-
-    portfolioItems.forEach(portfolioItem => {
-        portfolioItem.addEventListener('mouseout', () => {
-            portfolioItem.childNodes[1].classList.remove('img-darken')
-        })
-    })
-
-
-</script>
-
 </html>

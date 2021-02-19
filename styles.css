@@ -1,123 +1,79 @@
-/* Master Styles */
-body {
-    margin: 0;
+* {
     padding: 0;
+    margin: 0;
+}
+
+body {
+    /*border: solid black;*/
     font-family: "Lato", sans-serif;
-    /*border: solid red;*/
-}
+    line-height: 1.6;
+    height: 100vh;
 
-.container {
-    display: grid;
-    grid-template-columns: 1fr;
-    /*border: double blueviolet;*/
 }
 
 
-/* Nav Styles */
-.nav-wrapper {
+/* NAVBAR STYLES */
+.navbar {
+    background-color: azure;
+    border: solid navy;
+    position: fixed;
+    top: 0;
+    z-index: 1;
     display: flex;
+    width: 100%;
+    height: 60px;
     justify-content: space-between;
-    padding: 40px;
-    border: solid green;
-}
-
-.left-side {
-    display: flex;
-}
-.right-side {
-    display: flex;
     align-items: center;
 }
-.nav-wrapper > .left-side > div {
-    margin-right: 20px;
-    font-size: 0.9em;
-    text-transform: uppercase;
+
+.right-side {
+    /*border: solid red;*/
+    margin-right: 1rem;
+}
+
+.navbar ul {
+    margin-left: 1rem;
+    display: flex;
+    list-style: none;
 }
 
 .nav-link-wrapper {
-    height: 20px;
+    margin-right: .5em;
+    border-bottom: 1px solid transparent;
     transition: border-bottom 0.5s;
-    /*border: solid blue;*/
+    /*border: solid red;*/
 }
 
 .nav-link-wrapper a {
-    /*color: pink;*/
     text-decoration: none;
+    color: black;
     transition: color 0.5s;
 }
 
 .nav-link-wrapper:hover {
     border-bottom: 1px solid black;
 }
+.nav-link-wrapper:hover a{
+    color: grey;
 
-.nav-link-wrapper a:hover {
-    color: green;
 }
 
-.active-nav-link {
-    border-bottom: 1px solid black;
-}
-
-.active-nav-link a {
-    /*override default color behavior*/
-    color: black !important;
-}
-
-
-
-/* Portfolio Styles */
-.portfolio-items-wrapper {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-}
-
-.portfolio-item-wrapper {
-    position: relative;
-    /*border: solid blue;*/
-}
-
-.portfolio-img-background {
-    height: 350px;
+/* CONTAINER STYLES */
+.container {
+    margin-top: 60px;
     width: 100%;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    border: solid salmon;
+    /* scroll */
 }
 
-.img-text-wrapper {
-    position: absolute;
-    top: 0;
-    display: flex;
-    flex-direction: column;
-    /*border: solid green;*/
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    height: 100%;
-    padding-left: 100px;
-    padding-right: 100px;
-}
+/* SECTION STYLES */
+ section {
+     border: dotted gold;
+ }
 
-.logo-wrapper img {
-    width: 50%;
-    margin-bottom: 10px;
-}
-.img-text-wrapper .subtitle {
-    transition: 1s;
-    font-weight: 600;
-    color: transparent;
-}
-
-.img-text-wrapper:hover .subtitle {
-    font-weight: 600;
-    color: lightseagreen;
-}
-
-.img-darken {
-    transition: 1s;
-    filter: brightness(10%);
-}
-
+ .section-header {
+     text-align: center;
+ }
 
 
 /* About Page Styles */
@@ -157,106 +113,80 @@ body {
 
 
 
- /*Test portfolio*/
- .content-wrapper {
-     border: dotted gold;
-
- }
- .content-wrapper-header {
-     text-align: center;
- }
-
-
-.projects-wrapper {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+/* PROJECT STYLE */
+/* projects displayed as horizontal boxes */
+.projects-list { 
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
 }
+
 
 .project-wrapper {
+    /*border: solid blue;*/
+}
+
+
+/*fits the image itself unless u wanna specify this*/
+/*pointer so they know it is clickable*/
+/*position relative so we can position absolute the details over it*/
+.project-image-wrapper {
+    width: fit-content;
+    cursor: pointer;
     position: relative;
+    
 }
 
-.project-img-background {
-    height: 350px;
-    width: 100%;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+/*square img, darkens over hover*/
+.project-image-wrapper img {
+    width: 240px;
+    height: 240px;
+    transition: 0.3s;
 }
-
-.project-details-wrapper {
-    position: absolute;
-    top: 0;
-    width:initial;
-    display: flex;
-    flex-direction: column;
-    border: solid green;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    padding-left: 100px;
-    padding-right: 100px;
-    padding-top: 25%;
-}
-
-.project-wrapper .subtitle {
-    transition: 1s;
-    font-weight: 600;
-    color: transparent;
-}
-
-.project-details-wrapper:hover .subtitle {
-    font-weight: 600;
-    color: lightseagreen;
-}
-
-.project-details-wrapper .project-details-button {
-    opacity: 0%;
-}
-
-.project-details-wrapper:hover .project-details-button {
-    transition: 1s;
-    opacity: 100%;
-}
-.img-darken {
-    transition: 1s;
+.project-image-wrapper:hover img{
     filter: brightness(10%);
 }
 
-
-/*Experience Style*/
-.buttons-container {
-    display: flex;
-    justify-content:center;
+/*must be bold and centered*/
+.project-header {
+    text-align: center;
+    position: absolute;
+    color: azure;
+    top: 20%;
+    left: 50%;
+    z-index: 1;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: 0.3s;
 }
 
-.buttons-container button{
-    margin-right: 1rem;
+/*maybe better if project details was a div*/
+/*then using col flex box i can center both the header and the details*/
+.project-details {
+    color: aqua;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: 0.3s;
+}
+.project-image-wrapper:hover .project-details {
+    opacity: 100;
+}
+
+.project-image-wrapper:hover .project-header {
+    opacity: 100;
 }
 
 
-button {
-    color: #494949 !important;
-    text-transform: uppercase;
-    text-decoration: none;
-    background: #ffffff;
-    padding: 20px;
-    border: 4px solid #494949 !important;
-    display: inline-block;
-    transition: all 0.4s ease 0s;
-    white-space: nowrap;
-}
 
-button:hover {
-    color: #ffffff !important;
-    background: #f6b93b;
-    border-color: #f6b93b !important;
-    transition: all 0.4s ease 0s;
-}
+
+
+
+
+
 
 /* RESPONSIVE */
 @media only screen and (max-width: 550px) {
