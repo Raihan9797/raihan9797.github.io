@@ -1,43 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!--
+    <script src="https://kit.fontawesome.com/da3f683f4d.js" crossorigin="anonymous"></script>
+    -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="styles.css">
+
+
 
     <title>Raihan's Website</title>
 </head>
 <body>
-    <nav class="navbar">
 
-        <div class="burger">
-            <div class="line1"></div>
-            <div class="line2"></div>
-            <div class="line3"></div>
-        </div>
-
-        <ul class="left-side">
-            <li class="nav-link-wrapper"><a href="#about">ABOUT ME</a></li>
-            <li class="nav-link-wrapper"><a href="#experience">EXPERIENCE</a></li>
-            <li class="nav-link-wrapper"><a href="#skills">SKILLS</a></li>
-            <li class="nav-link-wrapper"><a href="#projects">PROJECTS</a></li>
-            <li class="nav-link-wrapper"><a href="old_index.html">testing</a></li>
-        </ul>
-
-        <div class="right-side">
-            <div class="brand">
-                RAIHAN TARMIDI
-            </div>
-
-        </div>
-    </nav>
-
-    <script src="app.js"></script>
     <div class="container">
 
+
+        <nav class="navbar">
+
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+
+            <ul class="left-side">
+                <li class="nav-link-wrapper"><a href="#about">About</a></li>
+                <li class="nav-link-wrapper"><a href="#experience">Experience</a></li>
+                <li class="nav-link-wrapper"><a href="#projects">Projects</a></li>
+                <li class="nav-link-wrapper"><a href="#skills">Skills</a></li>
+                <li class="nav-link-wrapper"><a href="old_index.html">testing</a></li>
+            </ul>
+
+            <div class="right-side">
+                <div class="brand">
+                    RAIHAN TARMIDI
+                </div>
+
+            </div>
+        </nav>
+
+    <script src="app.js"></script>
 
 
         <section id="about">
@@ -51,6 +59,12 @@
                     <p>
                         I'm Raihan, a year 3 Business Analytics student in the National University of Singapore (NUS). This site is currently under development!
                     </p>
+
+                    <div class="social-media-buttons">
+                        <a href="https://www.linkedin.com/in/raihan-tarmidi-506ba7175/" class="fa fa-linkedin fa-lg"></a>
+                        <a href="https://www.linkedin.com/in/raihan-tarmidi-506ba7175/" class="fa fa-github fa-lg"></a>
+
+                    </div>
                 </div>
 
                 <div class="profile-image-wrapper">
@@ -62,7 +76,7 @@
         </section>
 
         <section id="experience">
-            <h1 class="section-header">MY EXPERIENCE</h1>
+            <h1 class="section-header">Experience</h1>
             <h2>School</h2>
             <h4>Relevant Course Work</h4>
             <p>Machine Learning, Data Management And Visualization, Data Structures and Algorithms, Probability and Statistics</p>
@@ -73,25 +87,13 @@
             <h4>NUS Kayaking</h4>
             <p>Marketing Director, facilitating classes for students, and going on expeditions!</p>
         </section>
-        <section id="skills">
-            <h1 class="section-header">MY SKILLS</h1>
-            <h4>Languages</h4>
-            <ul>
-                <li>Python</li>
-                <li>Java</li>
-                <li>R</li>
-                <li>javascript</li>
-            </ul>
-            <h4>Framework</h4>
-            <ul>
-                <li>Python</li>
-                <li>Java</li>
-                <li>R</li>
-                <li>javascript</li>
-            </ul>
-        </section>
+
+        <div>hello</div>
+
+
+
         <section id="projects">
-            <h1 class="section-header">MY PROJECTS</h1>
+            <h1 class="section-header">Projects</h1>
 
             <ul class="projects-list">
 
@@ -119,6 +121,105 @@
 
 
         </section>
+
+
+
+
+        <section id="skills">
+
+            <h1 class="section-header">Skills</h1>
+
+            <div class="skills-subsections">
+
+                <div class="skills-subsection languages">
+
+                    <h4 class="skills-subsection-header">Languages</h4>
+
+                    <ul class="skills-subsection-list">
+
+                        <li>
+                            <div class="logo-wrapper">
+                                <img src="images/logos/python.svg" alt="">
+                            </div>
+                        </li>
+
+
+                        <li>
+                            <div class="logo-wrapper">
+                                <img src="images/logos/Java-Logo.svg" alt="">
+                            </div>
+                        </li>
+
+
+
+                        <li>
+                            <div class="logo-wrapper">
+                                <img src="images/logos/r-project-icon.svg" alt="">
+                            </div>
+                        </li>
+
+
+                        <li>javascript</li>
+                    </ul>
+                </div>
+
+
+
+                <div class="skills-subsection frameworks">
+                    <h4 class="skills-subsection-header">Frameworks</h4>
+                    <ul class="skills-subsection-list">
+                        <li>
+                            <div class="logo-wrapper">
+                                <img src="images/logos/vue-9.svg" alt="">
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="logo-wrapper">
+                                <img src="images/logos/flask.svg" alt="">
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="logo-wrapper">
+                                <img src="images/logos/firebase-1.svg" alt="">
+                        </li>
+
+                    </ul>
+
+                </div>
+
+
+
+                <div class="skills-subsection dev-ops">
+                    <h4 class="skills-subsection-header">Dev Ops</h4>
+                    <ul class="skills-subsection-list">
+
+                        <li>
+                            <div class="logo-wrapper">
+                                <img src="images/logos/file_type_docker2.svg" alt="">
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="logo-wrapper">
+                                <img src="images/logos/heroku.svg" alt="">
+                            </div>
+                        </li>
+
+                    </ul>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+
+
     </div>
     
 </body>
