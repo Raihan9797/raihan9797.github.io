@@ -228,7 +228,8 @@ body {
 /* PROJECT STYLE */
 /* projects displayed as horizontal boxes */
 .projects-list { 
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 240px);
     justify-content: center;
     list-style-type: none;
 }
@@ -341,9 +342,8 @@ body {
         grid-row-end: 2;
     }
 
-    /* RESPONSIVE PROJECT */
-    .projects-wrapper {
-        display: grid;
-        grid-template-columns: 1fr;
+    .profile-content-wrapper {
+        text-align: center;
     }
+
 }
