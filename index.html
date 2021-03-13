@@ -34,7 +34,6 @@
                 <li class="nav-link-wrapper"><a href="#experience">Experience</a></li>
                 <li class="nav-link-wrapper"><a href="#projects">Projects</a></li>
                 <li class="nav-link-wrapper"><a href="#skills">Skills</a></li>
-                <li class="nav-link-wrapper"><a href="old_index.html">testing</a></li>
             </ul>
 
             <div class="right-side">
@@ -61,8 +60,8 @@
                     </p>
 
                     <div class="social-media-buttons">
-                        <a href="https://www.linkedin.com/in/raihan-tarmidi-506ba7175/" class="fa fa-linkedin fa-lg"></a>
-                        <a href="https://www.linkedin.com/in/raihan-tarmidi-506ba7175/" class="fa fa-github fa-lg"></a>
+                        <a href="https://www.linkedin.com/in/raihan-tarmidi-506ba7175/" target = "_blank" class="fa fa-linkedin fa-lg"></a>
+                        <a href="https://github.com/Raihan9797" target = "_blank" class="fa fa-github fa-lg"></a>
 
                     </div>
                 </div>
@@ -77,15 +76,32 @@
 
         <section id="experience">
             <h1 class="section-header">Experience</h1>
-            <h2>School</h2>
-            <h4>Relevant Course Work</h4>
-            <p>Machine Learning, Data Management And Visualization, Data Structures and Algorithms, Probability and Statistics</p>
-            <h2>Work</h2>
-            <h4>Sembcorp</h4>
-            <p>I'm currently Interning at Sembcorp under their Data Science Department</p>
-            <h2>CCAs</h2>
-            <h4>NUS Kayaking</h4>
-            <p>Marketing Director, facilitating classes for students, and going on expeditions!</p>
+            <div id="experience-buttons-list">
+                <button class = 'experience-button' onclick="toggleExperience('experience-school')">School</button>
+                <button class = 'experience-button' onclick="toggleExperience('experience-internship')">Internships</button>
+                <button class = 'experience-button' onclick="toggleExperience('experience-cca')">CCAs</button>
+            </div>
+
+            <div class = 'experience-div' id="experience-school">
+                <div class="experience-content">
+                    <h4>Relevant Course Work</h4>
+                    <p>Machine Learning, Data Management And Visualization, Data Structures and Algorithms, Probability and Statistics</p>
+                </div>
+            </div>
+
+            <div class = 'experience-div' id="experience-internship">
+                <div class="experience-content">
+                    <h4>Sembcorp</h4>
+                    <p>I'm currently Interning at Sembcorp under their Data Science Department</p>
+                </div>
+            </div>
+
+            <div class = 'experience-div' id="experience-cca">
+                <div class="experience-content">
+                    <h4>NUS Kayaking</h4>
+                    <p>Marketing Director, facilitating classes for students, and going on expeditions!</p>
+                </div>
+            </div>
         </section>
 
 
