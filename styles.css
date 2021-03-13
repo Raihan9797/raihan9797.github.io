@@ -30,6 +30,7 @@ color: #d96459;
 body {
     /*border: solid black;*/
     font-family: "Lato", sans-serif;
+    font-family: 'Merriweather', serif;
     line-height: 1.6;
     height: 100vh;
     /*background-color: #f2e394;*/
@@ -224,13 +225,27 @@ body {
 }
 
 .fa {
-  padding: 20px;
-  text-align: center;
-  margin: 0px 10px;
+    padding: 20px;
+    text-align: center;
+    margin: 0px 10px;
+    font-size: 1.5rem;
 
   /*background-color: #f2e394;*/
-  color: lightseagreen ;
 }
+
+.fa:hover{
+    color: lightseagreen;
+}
+
+.fa-linkedin {
+    color: dodgerblue;
+}
+
+.fa-github {
+    color: white
+}
+
+
 
 
 /* EXPERIENCE */
@@ -253,10 +268,32 @@ body {
 }
 
 .experience-content {
-    margin: 20px 0px;
+    margin: 20px 50px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
+    /*border: solid blue;*/
+}
+
+.experience-content-header {
+    margin: 20px 0px;
+    flex-direction: column;
+    align-items: center;
+    color: lightseagreen;
+}
+
+#kayaking-list {
+    list-style-type: none;
+}
+
+#kayaking-list li {
+    margin: 10px 0px;
+}
+
+.experience-link {
+    text-decoration: none;
+    color: coral;
 }
 
 
@@ -336,6 +373,7 @@ body {
 .skills-subsections {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
 
 }
 
@@ -346,6 +384,7 @@ body {
 
 .skills-subsection {
     /*border: solid gold;*/
+    width: 200px;
     display: flex;
     flex-direction: column;
 }
