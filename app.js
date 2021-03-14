@@ -3,7 +3,7 @@ const navSlide = () => {
     const nav_links = document.querySelector('.left-side');
 
     burger.addEventListener('click', () => {
-        console.log('HELLO')
+        //console.log('HELLO')
         nav_links.classList.toggle('nav-active')
     })
 }
@@ -36,3 +36,18 @@ function hideAllExperience() {
       divs.item(i).style.display = 'None';
     }
 }
+
+/* jquery scrolling */
+$('.navbar a').on('click', function(e) {
+    // console.log(this.hash)
+    if (this.hash !== '') {
+        e.preventDefault();
+
+        const hash = this.hash;
+
+        $('html, body').animate({
+            scrollTop: $(hash).offset().top -60
+        }, 800);
+    }
+})
+
