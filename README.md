@@ -82,3 +82,15 @@
 - jquery in depth explanation: https://www.youtube.com/watch?v=x0YnVwAuNQI
 - fixing offset caused by fixed navbar: https://jsfiddle.net/b4uje52o/2/
 - troubleshooting on chrome: https://stackoverflow.com/questions/44803907/smoothscroll-doesnt-work-in-chrome-but-works-in-other-browsers
+
+* smooth scrolling bug: when you click on the same section too many times when you are already at the section, the function will get "stuck" until you have moved enough times; resolve this by trying to 'break' the function when the scrollPos is the same as the intended scrollPos
+- use return to exit a function: https://flaviocopes.com/how-to-exit-a-function-javascript/#:~:text=Sometimes%20when%20you're%20in,returned%20back%20as%20a%20result.
+- rounding floats to int to get a similar approximated scroll pos (instead of exact calculation): https://stackoverflow.com/questions/596467/how-do-i-convert-a-float-number-to-a-whole-number-in-javascript
+
+* Weird Ipad issue: there is more to scroll below??
+
+* Button Toggle: Change color when selected; will revert back when a different experience button is chosen
+- button styling: https://www.w3schools.com/css/css3_buttons.asp
+- adding a class to an element: https://www.w3schools.com/howto/howto_js_add_class.asp
+- removing a class from an element: https://www.w3schools.com/howto/howto_js_remove_class.asp
++ toggling a class: https://www.w3schools.com/howto/howto_js_toggle_class.asp
