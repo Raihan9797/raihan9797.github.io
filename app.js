@@ -32,7 +32,7 @@ function toggleExperience(id_name) {
 function hideAllExperience() {
     divs = document.getElementsByClassName('experience-div')
     for (i = 0; i < divs.length; i++) {
-      console.log(divs.item(i).style);
+      // console.log(divs.item(i).style);
       divs.item(i).style.display = 'None';
     }
 }
@@ -44,6 +44,18 @@ $('.navbar a').on('click', function(e) {
         e.preventDefault();
 
         const hash = this.hash;
+        //console.log($(hash));
+        //console.log($(hash).offset());
+        //console.log($(hash).offset().top);
+        //console.log($('html').scrollTop() + 60);
+        var currentPos = $('html').scrollTop() + 60;
+        var sectionPos = $(hash).offset().top;
+        // checking if its already at the correct position
+        // if it is, dont run the function. Otherwise it will make the scroll get stuck on the section depending on how many times you have clicked on the button
+        if (Math.round(currentPos) == Math.round(sectionPos)) {
+            console.log('breaking')
+            return
+        }
 
         $('html, body').animate({
             scrollTop: $(hash).offset().top -60
