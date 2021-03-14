@@ -44,6 +44,7 @@
 * How to use font awesome
 - https://www.youtube.com/watch?v=e6LXQnWhsp8&ab_channel=Reecry
 - font awesome is hard to color
+- resize icons: https://fontawesome.com/how-to-use/on-the-web/styling/sizing-icons
 
 * Get logos
 - https://logosear.ch/search.html?q=flask
@@ -68,3 +69,16 @@
 * Hide all elements
 - js Selector:https://www.youtube.com/watch?v=W3EK4MlZW4g&t=215s&ab_channel=LearnCode.academy
 - dom htmlcollection: https://www.w3schools.com/jsref/dom_obj_htmlcollection.asp
+
+* Style css links
+- https://www.w3schools.com/css/css_link.asp
+
+* Google Fonts
+- https://fonts.google.com
+
+
+* Smooth Scrolling
+- 3 ways: https://www.youtube.com/watch?v=y9nlfqT4s9s&t=1177s
+- jquery in depth explanation: https://www.youtube.com/watch?v=x0YnVwAuNQI
+- fixing offset caused by fixed navbar: https://jsfiddle.net/b4uje52o/2/
+- troubleshooting on chrome: https://stackoverflow.com/questions/44803907/smoothscroll-doesnt-work-in-chrome-but-works-in-other-browsers
