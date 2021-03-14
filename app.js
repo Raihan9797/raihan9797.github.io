@@ -37,6 +37,24 @@ function hideAllExperience() {
     }
 }
 
+// changes the color of the button selected
+function toggleButton(button_id) {
+    unselectAllButtons();
+    selectedButton = document.getElementById(button_id);
+    //console.log(selectedButton.style);
+    selectedButton.classList.add('selected-button');
+}
+
+// unselects the other buttons
+function unselectAllButtons() {
+    buttons = document.getElementsByClassName('experience-button');
+    //console.log(buttons)
+    for (i = 0; i < divs.length; i++) {
+      //console.log(buttons.item(i).classList);
+      buttons.item(i).classList.remove('selected-button');
+    }
+}
+
 /* jquery scrolling */
 $('.navbar a').on('click', function(e) {
     // console.log(this.hash)
