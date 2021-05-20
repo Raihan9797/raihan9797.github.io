@@ -1,11 +1,13 @@
 # The Site Configuration
 
 # Import the theme
-remote_theme: jekyll-theme-chirpy
+#remote_theme: jekyll-theme-chirpy
+theme: jekyll-theme-chirpy
 
 # Only if your site type is GitHub Project sites and doesn't have a custom domain,
 # change below value to '/projectname'.
-baseurl: 'raihant.me'
+#baseurl: 'raihant.me'
+baseurl: ''
 
 # the HTML language tag › https://www.w3.org/International/questions/qa-choosing-language-tags
 lang: en-US
@@ -25,7 +27,7 @@ description: >-                        # used by seo meta and the atom feed
   and focuses on text presentation.
 
 # fill in the protocol & hostname for your site, e.g., 'https://username.github.io'
-url: ''
+url: 'raihan9797.github.io'
 
 github:
   username: github_username             # change to your github username
