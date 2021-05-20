@@ -169,4 +169,5 @@ jekyll-archives:
 gems:
   - jekyll-paginate
   - jekyll-seo-tag
+  - html-proofer
 paginate: 10
