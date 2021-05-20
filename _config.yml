@@ -168,4 +168,5 @@ jekyll-archives:
 
 gems:
   - jekyll-paginate
+  - jekyll-seo-tag
 paginate: 10
