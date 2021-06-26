@@ -12,21 +12,21 @@
 
 # theme                  : "minimal-mistakes-jekyll"
 # remote_theme           : "mmistakes/minimal-mistakes"
-minimal_mistakes_skin    : "neon" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin    : "dark" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Raihan's Site Title"
+title                    : "Raihan's Site" # the name you see on the tab
 title_separator          : "-"
-subtitle                 : a subtitle # site tagline that appears below site title in masthead
-name                     : "Raihan test"
+subtitle                 : # site tagline that appears below site title in masthead
+name                     : "Raihan Tarmidi" # the name you see at the footer.
 description              : "A description."
 url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
-masthead_title           : "masthead title!!"  # overrides the website title displayed in the masthead, use " " for no title
+masthead_title           : "Raihan Tarmidi"  # overrides the website title displayed in the masthead, use " " for no title
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
 comments:
@@ -52,7 +52,7 @@ reCaptcha:
 atom_feed:
   path                   : # blank (default) uses feed.xml
   hide                   : # true, false (default)
-search                   : # true, false (default)
+search                   : true # true, false (default)
 search_full_content      : # true, false (default)
 search_provider          : # lunr (default), algolia, google
 algolia:
@@ -100,6 +100,7 @@ author:
   location         : "Singapore"
   email            :
   links:
+    ### THE LINKS ON THE SIDE. TO HIDE ON THE PAGE, COMMENT OUT THE URL
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
       # url: "mailto:your.name@email.com"
@@ -108,7 +109,7 @@ author:
       # url: "https://your-website.com"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/"
+      # url: "https://twitter.com/"
     - label: "Facebook"
       icon: "fab fa-fw fa-facebook-square"
       # url: "https://facebook.com/"
@@ -120,7 +121,7 @@ author:
       # url: "https://instagram.com/"
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
-      url: "https://linkedin.com/"
+      url: "https://linkedin.com/in/raihan-tarmidi-506ba7175/"
 
 # Site Footer
 footer:
@@ -136,7 +137,7 @@ footer:
       url: "https://github.com/raihan9797"
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
-      url: "https://linkedin.com/"
+      url: "https://linkedin.com/in/raihan-tarmidi-506ba7175/"
     - label: "GitLab"
       icon: "fab fa-fw fa-gitlab"
       # url:
