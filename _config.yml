@@ -227,6 +227,7 @@ plugins:
   - jekyll-gist
   - jekyll-feed
   - jekyll-include-cache
+  - jemoji
 
 # mimic GitHub Pages with --safe
 whitelist:
@@ -287,3 +288,4 @@ defaults:
       comments: # true
       share: true
       related: true
+      toc: true
