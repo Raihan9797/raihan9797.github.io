@@ -68,6 +68,7 @@ plt.show()
 - Saving all your dfs into a `data` folder makes things neater!
 - use `index = False`: don't save the unnamed index column into the excel file
 - prefer to use excel instead of csv (for now) as you can acess use Excel to look at the file too
+- csv can be loaded alot faster
 
 
 ```python
