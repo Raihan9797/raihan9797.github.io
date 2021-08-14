@@ -15,7 +15,7 @@ I previously came across this book, Algorithms to Live By, and brushed it off as
 
 But recently I came across this [video](https://www.youtube.com/watch?v=7Lwhw2iaFRo&t=7s) by a local Youtuber and was definitely intrigued. In it, he discusses how his teeth is so white (tldw; Crest whitestrips and a good dental routine) and how he brushes his teeth. I remembered being taught this in primary school but completely forgot about it as time went on. So I decided to follow a simplified regimen for my toothbrushing.
 
-![png]({{ site.baseurl }}/assets/images/toothbrush_algo/yt_vid.png){: .align-center }
+![png]({{ site.baseurl }}/assets/images/toothbrush_algo/yt_vid.PNG){: .align-center }
 
 As I continued to change the routine to suit my own needs, I realized that this was basically similar to implementing a more "correct" and "efficient" algorithm to my toothbrushing problem. For the uninitiated,
 
