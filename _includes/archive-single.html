@@ -10,6 +10,11 @@
   {% assign title = post.title %}
 {% endif %}
 
+{% comment %}
+THIS WILL ALLOW YOU TO ADD DATES LIKE A HEADER ON THE TITLE IN THE HOME PAGE
+{{ post.date | date: "%B %d, %Y" }} 
+{% endcomment %}
+
 <div class="{{ include.type | default: 'list' }}__item">
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
     {% if include.type == "grid" and teaser %}
