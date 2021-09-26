@@ -40,6 +40,7 @@ Now with a bit more hindsight, my main issue was that **I was unsure what exactl
 *Note: I will not be fully explaining the solution, just the part that I struggled with.*
 
 Input: `head = [1,2,3]`
+
 ![png]({{ site.baseurl }}/assets/images/revising_recursion/linked_list_1.PNG){: .align-center }
 
 Output: `head = [3,2,1]`
