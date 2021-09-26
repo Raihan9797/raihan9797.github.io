@@ -212,3 +212,7 @@
   color: #f8f8f2;
   background-color: #49483e;
 }
+
+.highlight pre{
+  white-space: pre-wrap;
+}
