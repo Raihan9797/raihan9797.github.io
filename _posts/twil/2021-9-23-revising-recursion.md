@@ -40,12 +40,10 @@ Now with a bit more hindsight, my main issue was that **I was unsure what exactl
 *Note: I will not be fully explaining the solution, just the part that I struggled with.*
 
 Input: `head = [1,2,3]`
-![png]({{ site.baseurl }}/assets/images/toothbrush_algo/yt_vid.PNG){: .align-center }
-
-![png]({{ site.baseurl }}/assets/images/revising_recursion/linked_list_1.PNG){: .align-center }
+![png]({{ site.baseurl }}/assets/images/revising_recursion/linked_list_1.png){: .align-center }
 
 Output: `head = [3,2,1]`
-![png]({{ site.baseurl }}/assets/images/revising_recursion/linked_list_2.PNG){: .align-center }
+![png]({{ site.baseurl }}/assets/images/revising_recursion/linked_list_2.png){: .align-center }
 
 ```python
 class Solution:
@@ -64,13 +62,13 @@ class Solution:
 ```
 
 This is what I initiall thought wishful thinking would give me:
-![png]({{ site.baseurl }}/assets/images/revising_recursion/linked_list_3.PNG){: .align-center }
+![png]({{ site.baseurl }}/assets/images/revising_recursion/linked_list_3.png){: .align-center }
 
 On first glance this makes sense. Now all you have to do is get 2 to point to 1 (`2 → 1`) and for 1 to point to null (`1→ null`). But what happens when the length of the list increases? You would have to keep to keep doing more and more head.next. This means the problems is not being broken down properly!
 
 
 After a bit of sketching around, I realised what the actual subproblem is supposed to look like:
-![png]({{ site.baseurl }}/assets/images/revising_recursion/linked_list_4.PNG){: .align-center }
+![png]({{ site.baseurl }}/assets/images/revising_recursion/linked_list_4.png){: .align-center }
 
 This makes a lot more sense:
 1. 1 is connected to 2: initially, I assumed that `1 -> 3`. It's unlikely that wishful thinking would also change the pointers of the current case.
@@ -97,8 +95,8 @@ class Solution:
             head.next = None
             return new_head
 ```
-![png]({{ site.baseurl }}/assets/images/revising_recursion/linked_list_5.PNG){: .align-center }
-![png]({{ site.baseurl }}/assets/images/revising_recursion/linked_list_6.PNG){: .align-center }
+![png]({{ site.baseurl }}/assets/images/revising_recursion/linked_list_5.png){: .align-center }
+![png]({{ site.baseurl }}/assets/images/revising_recursion/linked_list_6.png){: .align-center }
 
 # 3. Double check your understanding by coding in a different language
 Although Python is my bread and butter, I definitely have quite a bit of experience coding in Java and R. My basic algorithms course was actually done using Java. So trying to code out the same solution in Java is not only a good refresher to the language, I get to check my understanding by implementing the  algorithm again. 
