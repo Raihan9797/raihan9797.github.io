@@ -1,5 +1,5 @@
 ---
-title: "My teethbrushing algorithm :grimacing: : How I'm applying algorithms in my life"
+title: "How I'm applying algorithms in my life"
 # subtitle: "How I apply algorithms in my life"
 categories:
   - reflection
