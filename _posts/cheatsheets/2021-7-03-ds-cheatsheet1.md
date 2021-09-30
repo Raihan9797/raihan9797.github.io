@@ -67,18 +67,21 @@ plt.show()
 # Getting and Saving Data
 - Saving all your dfs into a `data` folder makes things neater!
 - use `index = False`: don't save the unnamed index column into the excel file
-- prefer to use excel instead of csv (for now) as you can acess use Excel to look at the file too
-- csv can be loaded alot faster
 
+## CSV vs Excel
+- csv can be loaded alot faster
+- excel is better if you think you need to edit specific portions that might be too tedious to do on Python.
 
 ```python
 import pandas as pd
 
 # saving dataframes
 your_df.to_excel('data/your_df.xlsx', index = False)
+your_df.to_csv('data/your_df.csv', index = False)
 
 # loading dfs
 your_df = pd.read_excel('data/your_df.xlsx')
+your_df = pd.read_csv('data/your_df.csv')
 
 ```
 
@@ -87,9 +90,10 @@ your_df = pd.read_excel('data/your_df.xlsx')
 
 
 
-# Handling Null values
+## Handling Null values
 
-1. You can visualize the severity of missing values quickly with `missingno.matrix(df)`.
+### 1. You can visualize the severity of missing values quickly with `missingno.matrix(df)`.
+
 ```python
 import missingno
 
@@ -97,23 +101,23 @@ missingno.matrix(train)
 ```
 
 
-2. Getting the count of how many nan rows there are
+### 2. Getting the count of how many nan rows there are
+
 ```python
 train.isnull().sum() # get null counts of each column
 
 ```
 
-3. Getting all rows with NaN for entire dataframe
+### 3. Getting all rows with NaN for entire dataframe
 * reccomended to use `df.isna()` instead `df.isnull()` as isnull is going to be deprecated. It's also consistent with other functions like `fillna()`
 
 ```python
 df[df.isnull().any(axis = 1)]
-
 ```
 
-4. Getting all rows with NaN for specific column
+### 4. Getting all rows with NaN for specific column
 * reccomended to use `df.isna()` instead `df.isnull()` as isnull is going to be deprecated. It's also consistent with other functions like `fillna()`
+
 ```python
 df[df['column name'].isna().any(axis = 1)]
-
 ```
