@@ -96,7 +96,7 @@ analytics:
 author:
   name             : "Raihan Tarmidi"
   avatar           : /assets/images/profile_square.jpg # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an **insert adjective here** person."
+  bio              : "A budding data scientist interested in personal finance, guitar and writing!"
   location         : "Singapore"
   email            :
   links:
