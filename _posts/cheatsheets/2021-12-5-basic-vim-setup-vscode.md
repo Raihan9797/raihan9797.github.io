@@ -12,7 +12,7 @@ last_modified_at: 3 December 2021
 Vim has been a mainstay in my programming journey ever since I was introduced to it in my second semester of university. As I usually needed more time than my peers to come up with a solution, I felt that learning how to get my thoughts into code faster would help me to lessen the gap. So I first started by learning touch typing. [Typing Club](https://www.typingclub.com/) was a huge help in this regard. 
 
 <center>
-  <img src="{{site.baseurl}}/assets/images/vim_vscode_setup/typingclub.png" alt="typing club screenshot"/>
+  <img src="{{site.baseurl}}/assets/images/vim_vscode_setup/typingclub.PNG" alt="typing club screenshot"/>
 </center>
 <center><em>Trying to get a perfect score for each challenge</em></center>
 <br>
